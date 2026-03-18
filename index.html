@@ -2,70 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name | Portfolio</title>
+  <title>Ansh Pandey | Portfolio</title>
   <style>
     body {
-      font-family: Arial;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       background: #0f172a;
-      color: white;
-      text-align: center;
+      color: #f1f5f9;
+      line-height: 1.6;
     }
     header {
-      padding: 40px;
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
     }
     h1 {
-      font-size: 40px;
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+    p {
+      font-size: 18px;
+      color: #cbd5e1;
     }
     section {
-      margin: 30px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+    .skills {
+      margin: 20px auto;
+      max-width: 600px;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .skills p {
+      color: #f8fafc;
+      font-size: 16px;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
     .card {
       background: #1e293b;
       padding: 20px;
-      margin: 10px;
-      border-radius: 10px;
+      border-radius: 12px;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #f8fafc;
     }
     a {
       color: #38bdf8;
       text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 18px;
+      color: #38bdf8;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #1e293b;
+      color: #94a3b8;
+    }
+    @media (max-width: 768px) {
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Your Name</h1>
-  <p>Aspiring Software Developer 🚀</p>
+  <h1>Ansh Pandey</h1>
+  <p>Web Developer 🚀 | Tech Enthusiast</p>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>I am learning Web Development and building projects.</p>
+  <p>I am a passionate Web Developer who loves creating modern applications and solving real-world problems. 
+     With a strong foundation in programming and a drive to learn continuously, I aim to build impactful solutions.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <p>HTML | CSS | JavaScript | React | Python | C | C++ | Java</p>
+  </div>
 </section>
 
 <section>
   <h2>Projects</h2>
-
-  <div class="card">
-    <h3>Project 1</h3>
-    <p>Description of your project</p>
-    <a href="#">View Project</a>
+  <div class="projects">
+    <div class="card">
+      <h3>Student Management System</h3>
+      <p>A project to manage student records efficiently.</p>
+      <a href="https://github.com/anshpandey96/Java-programming" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+      <h3>Waste Segregation</h3>
+      <p>An innovative solution for smart waste management.</p>
+      <a href="https://github.com/anshpandey96/Java-programming" target="_blank">View Project</a>
+    </div>
   </div>
-
-  <div class="card">
-    <h3>Project 2</h3>
-    <p>Description of your project</p>
-    <a href="#">View Project</a>
-  </div>
-
 </section>
 
 <section>
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <p>Email: anshpandey8543@gmail.com</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/ansh-pandey-b1ab34333" target="_blank">LinkedIn</a>
+    <a href="https://github.com/anshpandey96" target="_blank">GitHub</a>
+    <a href="mailto:anshpandey8543@gmail.com">Email</a>
+  </div>
 </section>
+
+<footer>
+  <p>© 2026 Ansh Pandey | Made with ❤️</p>
+</footer>
 
 </body>
 </html>
